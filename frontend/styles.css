@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar h2
+{
+    font-family: sans-serif;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgrey;
+    box-shadow: 0px 10px 10px 0px gray;
+    height: 4rem;
+    width: 100vw;
+}
+
+.navbar-title {
+    color: white;
+}
+
+.navbar .content button {
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 30px;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+.btn:hover
+{
+    background-color: black;
+    color: white;
+    transition: ease-in, 0.4s;
+}
