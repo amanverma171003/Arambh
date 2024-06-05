@@ -39,7 +39,7 @@ const fetchEvents = () => {
     fetch(`${baseUrl}/events`)
       .then(response => response.json())
       .then(data => {
-        const eventsList = document.getElementById('eventsList');
+        const eventsList = document.getElementById('eventslist');
         eventsList.innerHTML = '';
         data.forEach(event => {
           const listItem = document.createElement('li');
