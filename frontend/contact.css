@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #121317;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(44, 44, 58);
+}
+.logo{
+    width: 120px;
+    height: 75px;
+    cursor: pointer;
+    float: left;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.main {
+    width: 100%vw;
+    height: 100%vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.379)), url(./assets/mast.jpg) no-repeat center center/cover;
+}
